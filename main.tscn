@@ -55,22 +55,22 @@ material = SubResource("StandardMaterial3D_3drfw")
 use_collision = true
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="stage/border" unique_id=427008756]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.9, 0, 1, 0, -4.371139e-08, 24.000002, 3.98, 1.4156103e-07)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 2.9159997, 0, 1, 0, -4.371139e-08, 24.000002, 12.780001, 1.4156103e-07)
 size = Vector3(48, 8.8, 0.1)
 material = SubResource("StandardMaterial3D_mhrpb")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="stage/border" unique_id=1146715570]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 0.9, 0, 1, 0, -4.371139e-08, -23.999998, 3.98, 1.4156103e-07)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 2.9159997, 0, 1, 0, -4.371139e-08, -23.999998, 12.780001, 1.4156103e-07)
 size = Vector3(48, 8.8, 0.1)
 material = SubResource("StandardMaterial3D_mhrpb")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="stage/border" unique_id=1084718174]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 0.9, 0, -3.5527137e-15, 0, 1, 1.9073486e-06, 3.98, -24)
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 2.9159997, 0, -3.5527137e-15, 0, 1, 1.9073486e-06, 12.780001, -24)
 size = Vector3(48, 8.8, 0.1)
 material = SubResource("StandardMaterial3D_mhrpb")
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="stage/border" unique_id=1105130444]
-transform = Transform3D(1, 0, 3.5527137e-15, 0, 0.9, 0, -3.5527137e-15, 0, 1, 1.9073486e-06, 3.98, 24.000002)
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 2.9159997, 0, -3.5527137e-15, 0, 1, 1.9073486e-06, 12.780001, 24.000002)
 size = Vector3(48, 8.8, 0.1)
 material = SubResource("StandardMaterial3D_mhrpb")
 
@@ -125,30 +125,6 @@ material = SubResource("StandardMaterial3D_lquwl")
 [node name="CSGCylinder3D5" type="CSGCylinder3D" parent="stage" unique_id=838177894]
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.0093746185, 7.749999, 0)
 use_collision = true
-radius = 0.8
-height = 48.018753
-material = SubResource("StandardMaterial3D_lquwl")
-
-[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="stage" unique_id=553298284]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.0093746185, 7.749999, 24)
-radius = 0.8
-height = 48.018753
-material = SubResource("StandardMaterial3D_lquwl")
-
-[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="stage" unique_id=1351009295]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.0093746185, 7.749999, -24)
-radius = 0.8
-height = 48.018753
-material = SubResource("StandardMaterial3D_lquwl")
-
-[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="stage" unique_id=2046296789]
-transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 24.009377, 7.749999, 0)
-radius = 0.8
-height = 48.018753
-material = SubResource("StandardMaterial3D_lquwl")
-
-[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="stage" unique_id=1105923292]
-transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, -23.990623, 7.749999, 0)
 radius = 0.8
 height = 48.018753
 material = SubResource("StandardMaterial3D_lquwl")
@@ -233,4 +209,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.3000002)
 [node name="eyes" type="Node3D" parent="player/nek/head" unique_id=314834590]
 
 [node name="camera" type="Camera3D" parent="player/nek/head/eyes" unique_id=101131142]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31481552)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, -0.31481552)

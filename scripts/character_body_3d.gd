@@ -132,7 +132,7 @@ func _physics_process(delta: float) -> void:
 		if sliding:
 			eyes.rotation.z =  lerp(eyes.rotation.z, -deg_to_rad(6.5), delta * 7.0)
 		else: 
-			camera.rotation.z =  -deg_to_rad(nek.rotation.y * free_look_tilt_amount)
+			eyes.rotation.z =  -deg_to_rad(nek.rotation.y * free_look_tilt_amount)
 	else: 
 		free_looking = false
 		nek.rotation.y = lerp(nek.rotation.y,0.0, delta * 6.0)
