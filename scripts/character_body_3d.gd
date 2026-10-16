@@ -1,15 +1,19 @@
 extends CharacterBody3D
 
+# Player pivots
 @onready var nek: Node3D = $nek
 @onready var head: Node3D = $nek/head
 @onready var eyes: Node3D = $nek/head/eyes
 @onready var camera: Camera3D = $nek/head/eyes/camera
 
+# Animation Stuff
+
+# Crouchng stuff
 @onready var crouching_collision: CollisionShape3D = $Crouching_collision
 @onready var standing_collision: CollisionShape3D = $Standing_collision
-
 @onready var ray_cast_3d: RayCast3D = $RayCast3D
 
+# Different stuff
 var speed
 const CROUCH_SPEED = 3.0
 const WALK_SPEED = 5.0
@@ -27,12 +31,17 @@ var sprinting = false
 var crouching = false
 var free_looking = false
 var sliding = false
+var idle = true
 
 # Slide vars
 var slide_timer = 0.0
 var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
 var slide_speed = 13.0
+
+# Double jump vars
+const POSSIBLE_JUMPS = 2
+var currentJumpCount = 0
 
 # Head bob variables
 const HeadbobVars = {
@@ -65,6 +74,7 @@ const FOV_CHANGE = 1.5
 # Eliminate Mouse
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 	
 # Move Camera
 func _unhandled_input(event):
@@ -114,6 +124,11 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and (is_on_floor() or CoyoteTimeDT >= 0):
 		velocity.y = JUMP_VELOCITY
 		sliding = false
+		currentJumpCount = 1
+	# Handle double jump
+	elif Input.is_action_just_pressed("jump") and currentJumpCount == 1:
+		velocity.y = JUMP_VELOCITY
+		currentJumpCount += 1
 		
 	# Handle sprint/crouch.
 	if Input.is_action_pressed("crouch") || sliding:
@@ -152,12 +167,11 @@ func _physics_process(delta: float) -> void:
 			walking = false
 			sprinting = true
 			crouching = false
+			
 		
 		else:
-			
 			# Walking
 			speed = WALK_SPEED
-			
 			walking = true
 			sprinting = false
 			crouching = false
