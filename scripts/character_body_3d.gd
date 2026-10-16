@@ -19,6 +19,7 @@ const SENS = 0.005
 var CROUCHING_DEBTH = -0.5
 var free_look_tilt_amount = 5
 var direction = Vector3.ZERO
+var relative_direction = Vector3.ZERO
 
 # States
 var walking = false
@@ -34,17 +35,28 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 13.0
 
 # Head bob variables
-const head_bobbing_sprinting_speed = 22.0
-const head_bobbing_walking_speed = 14.0
-const head_bobbing_crouching_speed = 10.0
-
-const head_bobbing_sprinting_intensity = 0.2
-const head_bobbing_walking_intensity = 0.1
-const head_bobbing_crouching_intensity = 0.05
+const HeadbobVars = {
+	Sprinting = {
+		Speed =  22.0,
+		Intensity = 0.2
+	},
+	Walking = {
+		Speed =  14.0,
+		Intensity = 0.1
+	},
+	Crouching = {
+		Speed =  10.0,
+		Intensity = 0.05
+	},
+}
 
 var head_bobbing_vector = Vector2.ZERO
 var head_bobbing_index = 0.0
 var head_bobbing_current_intensity = 0.0
+
+#coyote time
+var CoyoteTimeDT = 0.0
+const CoyoteTimeValue = 0.15
 
 #fov variables
 const BASE_FOV = 75.0
@@ -62,18 +74,44 @@ func _unhandled_input(event):
 		else:
 			head.rotate_y(-event.relative.x * SENS)
 			camera.rotate_x(-event.relative.y * SENS)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-89), deg_to_rad(89))
-		
+			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-89), deg_to_rad(89))	
+#this function returns the current movement type of the player based on the movement variables
+func get_movement_type():
+	if sprinting:
+		return "Sprinting"
+	elif crouching:
+		return "Crouching"
+	return "Walking"
+	
+#do spongbob
+func headbob(delta:float, input_dir:Vector2):
+	var MovementType = get_movement_type()
+	var FinalHeadbobPosition = Vector2.ZERO
+	head_bobbing_current_intensity = HeadbobVars[MovementType].Intensity
+	head_bobbing_index += HeadbobVars[MovementType].Speed * delta
+	head_bobbing_vector.y = sin(head_bobbing_index)
+	head_bobbing_vector.x = sin(head_bobbing_index/2)+0.5
+	if is_on_floor() && !sliding && input_dir != Vector2.ZERO:
+		FinalHeadbobPosition.y = head_bobbing_vector.y * (head_bobbing_current_intensity / 2.0)
+		FinalHeadbobPosition.x = head_bobbing_vector.x * head_bobbing_current_intensity
+	eyes.position.y = lerp(eyes.position.y, FinalHeadbobPosition.y, delta * 10.0)
+	eyes.position.x = lerp(eyes.position.x, FinalHeadbobPosition.x, delta * 10.0)
+	
 func _physics_process(delta: float) -> void:
+	#subtract all deltatimes here
+	CoyoteTimeDT -= delta
+	
 	# Getting movement direction
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	else:
+		CoyoteTimeDT = CoyoteTimeValue
 
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and (is_on_floor() or CoyoteTimeDT >= 0):
 		velocity.y = JUMP_VELOCITY
 		sliding = false
 		
@@ -147,26 +185,7 @@ func _physics_process(delta: float) -> void:
 			print("End Slide")
 		
 	# Handle headbob
-	if sprinting:
-		head_bobbing_current_intensity = head_bobbing_sprinting_intensity
-		head_bobbing_index += head_bobbing_sprinting_speed * delta
-	elif walking: 
-		head_bobbing_current_intensity = head_bobbing_walking_intensity
-		head_bobbing_index += head_bobbing_walking_speed * delta
-	elif crouching:
-		head_bobbing_current_intensity = head_bobbing_crouching_intensity
-		head_bobbing_index += head_bobbing_crouching_speed * delta
-		
-	if is_on_floor() && !sliding && input_dir != Vector2.ZERO:
-		head_bobbing_vector.y = sin(head_bobbing_index)
-		head_bobbing_vector.x = sin(head_bobbing_index/2)+0.5
-		
-		eyes.position.y = lerp(eyes.position.y, head_bobbing_vector.y * (head_bobbing_current_intensity / 2.0), delta * 10.0)
-		eyes.position.x = lerp(eyes.position.x, head_bobbing_vector.x * head_bobbing_current_intensity, delta * 10.0)
-		
-	else:
-		eyes.position.y = lerp(eyes.position.y, 0.0, delta * 10.0)
-		eyes.position.x = lerp(eyes.position.x, 0.0, delta * 10.0)
+	headbob(delta, input_dir)
 		
 	# Get the input direction and handle the movement/deceleration.
 	if is_on_floor():
@@ -193,7 +212,4 @@ func _physics_process(delta: float) -> void:
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
-	
 	move_and_slide()
-	
-	#ignore this comment, this is to test if github will sync
