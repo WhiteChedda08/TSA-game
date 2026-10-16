@@ -23,8 +23,14 @@ const SENS = 0.005
 var CROUCHING_DEBTH = -0.5
 var free_look_tilt_amount = 5
 var direction = Vector3.ZERO
-var relative_direction = Vector3.ZERO
-
+var character_velocity = {
+	relative = Vector3.ZERO,
+	absolute = Vector3.ZERO
+}
+var character_direction = {
+	relative = Vector3.ZERO,
+	absolute = Vector3.ZERO
+}
 # States
 var walking = false
 var sprinting = false
@@ -201,7 +207,6 @@ func _physics_process(delta: float) -> void:
 	# Handle headbob
 	headbob(delta, input_dir)
 		
-	# Get the input direction and handle the movement/deceleration.
 	if is_on_floor():
 		direction = lerp(direction,(head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(), delta * 7.0)
 	else:
@@ -209,7 +214,6 @@ func _physics_process(delta: float) -> void:
 			direction = lerp(direction,(head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(), delta * 3.0)
 	if sliding:
 		direction = slide_vector
-		
 	if direction:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 10.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 10.0)
