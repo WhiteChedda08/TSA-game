@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cvmfoa5lngnhu"]
 
 [ext_resource type="Texture2D" uid="uid://dy0w5lbkmuylh" path="res://godot-prototype-texture/PNG/checker_512x512/checker_black_512x512.png" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cuc1fm15p2wg3" path="res://game_data.gd" id="1_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bfbx43t08wwes" path="res://godot-prototype-texture/PNG/checker_512x512/checker_orange_512x512.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bvvjn1f8vfaf7" path="res://godot-prototype-texture/PNG/checker_512x512/checker_red_512x512.png" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://cj7slirpwl27c" path="res://scripts/character_body_3d.gd" id="3_lquwl"]
@@ -17568,7 +17569,12 @@ glow_enabled = true
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 height = 1.2
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y78lg"]
+transparency = 1
+albedo_color = Color(1, 0.62352943, 0.18431373, 0.654902)
+
 [node name="main" type="Node3D" unique_id=1758455306]
+script = ExtResource("1_lquwl")
 
 [node name="stage" type="Node3D" parent="." unique_id=124633219]
 
@@ -18200,7 +18206,7 @@ shape = SubResource("CapsuleShape3D_1bvp3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50000006, -0.3000002)
 shape = SubResource("CapsuleShape3D_lquwl")
 
-[node name="RayCast3D" type="RayCast3D" parent="player" unique_id=923299917]
+[node name="CrouchRaycast" type="RayCast3D" parent="player" unique_id=923299917]
 transform = Transform3D(1, 0, 0, 0, 0.864, 0, 0, 0, 1, 0, 0.19999996, -0.3000002)
 target_position = Vector3(0, 2, 0)
 
@@ -18209,14 +18215,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.3000002)
 
 [node name="head" type="Node3D" parent="player/nek" unique_id=58628416]
 
+[node name="RayCastLeft" type="RayCast3D" parent="player/nek/head" unique_id=948122738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
+target_position = Vector3(-1, 0, 0.5)
+collision_mask = 2
+
+[node name="RayCastRight" type="RayCast3D" parent="player/nek/head" unique_id=1291082527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
+target_position = Vector3(1, 0, 0.5)
+collision_mask = 2
+
 [node name="eyes" type="Node3D" parent="player/nek/head" unique_id=314834590]
 
 [node name="camera" type="Camera3D" parent="player/nek/head/eyes" unique_id=101131142]
 
-[node name="RayCastLeft" type="RayCast3D" parent="player" unique_id=948122738]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-target_position = Vector3(-0.75, 0, 0)
-
-[node name="RayCastRight" type="RayCast3D" parent="player" unique_id=1291082527]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-target_position = Vector3(0.75, 0, 0)
+[node name="WallrunCollision" type="CSGBox3D" parent="." unique_id=1989430179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2362971, 3.6749792, 23.82237)
+layers = 3
+use_collision = true
+collision_layer = 2
+collision_mask = 2
+size = Vector3(22.518005, 8.149384, 0.27441406)
+material = SubResource("StandardMaterial3D_y78lg")
