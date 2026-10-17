@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cvmfoa5lngnhu"]
 
 [ext_resource type="Texture2D" uid="uid://dy0w5lbkmuylh" path="res://godot-prototype-texture/PNG/checker_512x512/checker_black_512x512.png" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cuc1fm15p2wg3" path="res://game_data.gd" id="1_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bfbx43t08wwes" path="res://godot-prototype-texture/PNG/checker_512x512/checker_orange_512x512.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bvvjn1f8vfaf7" path="res://godot-prototype-texture/PNG/checker_512x512/checker_red_512x512.png" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://cj7slirpwl27c" path="res://scripts/character_body_3d.gd" id="3_lquwl"]
@@ -17569,6 +17570,7 @@ glow_enabled = true
 height = 1.2
 
 [node name="main" type="Node3D" unique_id=1758455306]
+script = ExtResource("1_lquwl")
 
 [node name="stage" type="Node3D" parent="." unique_id=124633219]
 
