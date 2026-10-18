@@ -71,6 +71,10 @@ free_look={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_2="WallrunCollision"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

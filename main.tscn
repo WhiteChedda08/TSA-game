@@ -17569,10 +17569,6 @@ glow_enabled = true
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 height = 1.2
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y78lg"]
-transparency = 1
-albedo_color = Color(1, 0.62352943, 0.18431373, 0.654902)
-
 [node name="main" type="Node3D" unique_id=1758455306]
 script = ExtResource("1_lquwl")
 
@@ -18218,22 +18214,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.3000002)
 [node name="RayCastLeft" type="RayCast3D" parent="player/nek/head" unique_id=948122738]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
 target_position = Vector3(-1, 0, 0.5)
-collision_mask = 2
 
 [node name="RayCastRight" type="RayCast3D" parent="player/nek/head" unique_id=1291082527]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
 target_position = Vector3(1, 0, 0.5)
-collision_mask = 2
 
 [node name="eyes" type="Node3D" parent="player/nek/head" unique_id=314834590]
 
 [node name="camera" type="Camera3D" parent="player/nek/head/eyes" unique_id=101131142]
-
-[node name="WallrunCollision" type="CSGBox3D" parent="." unique_id=1989430179]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2362971, 3.6749792, 23.82237)
-layers = 3
-use_collision = true
-collision_layer = 2
-collision_mask = 2
-size = Vector3(22.518005, 8.149384, 0.27441406)
-material = SubResource("StandardMaterial3D_y78lg")

@@ -11,3 +11,6 @@ var settings = {
 		jump = KEY_SPACE
 	}
 }
+
+func _ready():
+	pass

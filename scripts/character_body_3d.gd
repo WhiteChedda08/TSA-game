@@ -41,6 +41,7 @@ var crouching = false
 var free_looking = false
 var sliding = false
 var idle = true
+var jumping = false
 
 # Slide vars
 var slide_timer = 0.0
@@ -49,7 +50,7 @@ var slide_vector = Vector3.ZERO
 var slide_speed = 13.0
 
 # Double jump vars
-const POSSIBLE_JUMPS = 2
+const POSSIBLE_JUMPS = 1
 var currentJumpCount = 0
 
 # Head bob variables
@@ -93,6 +94,8 @@ var friction = {
 	air = 8.0, #speed reduction when in the air 
 }
 #wallrunning
+const max_wallrun = 2
+var current_wallrun = 0
 var can_wallrun = false
 var in_wallrun = false
 var wallrun_raycast = {
@@ -206,7 +209,6 @@ func set_movement_state(delta:float, input_dir:Vector2):
 			slide_timer = slide_timer_max
 			slide_speed = velocity.length()
 			slide_vector = (head.global_transform.basis *  Vector3(input_dir.x, 0, input_dir.y)).normalized()
-			print("Start Slide")
 		walking = false
 		sprinting = false
 		crouching = true
@@ -239,24 +241,33 @@ func jump(vector=Vector3.ZERO):
 #the reset on jumps is in the _physics_process function
 func on_jump():
 	if can_wallrun and not is_on_floor():
-		currentJumpCount = 0
 		if in_wallrun:
 			var normal_vector = (wallrun_raycast.object.transform.basis * wallrun_raycast.normal)
-			var loc = head.global_basis.inverse() * normal_vector * JUMP_VELOCITY
+			var loc = (head.global_basis.inverse() * normal_vector).normalized() * JUMP_VELOCITY
 			motion.velocity.local += loc
 			jump()
-		else:
+		elif not in_wallrun and current_wallrun < max_wallrun:
+			current_wallrun += 1
 			in_wallrun = true
 	else:
-		if currentJumpCount >= POSSIBLE_JUMPS:
-			return
-		jump()
-		currentJumpCount += 1
-		
+		if is_on_floor():
+			jump()
+		elif currentJumpCount < POSSIBLE_JUMPS:
+			jump()
+			currentJumpCount += 1
+	
+func usable_raycast(ray:RayCast3D):
+	var b = ray.get_collider()
+	if b:
+		var dot = (b.transform.basis * ray.get_collision_normal()).y
+		return (abs(dot) < 0.1)
+	return false 
+				
 func wall_run():
+	
 	var used = null
-	var left_cast = wallrun_raycasts.left.get_collider()
-	var right_cast = wallrun_raycasts.right.get_collider()
+	var left_cast = usable_raycast(wallrun_raycasts.left)
+	var right_cast = usable_raycast(wallrun_raycasts.right)
 	if left_cast:
 		used = "left"
 	elif right_cast:
@@ -288,6 +299,7 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if is_on_floor():
 		currentJumpCount = 0
+		current_wallrun = 0
 		coyote_time_delta = coyote_time_value
 		motion.velocity.global.y = max(motion.velocity.global.y, 0)
 	else:
