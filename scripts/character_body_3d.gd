@@ -218,7 +218,7 @@ func set_movement_state(delta:float, input_dir:Vector2):
 		standing_collision.disabled = false
 		crouching_collision.disabled = true
 		
-		if Input.is_key_pressed(game.settings.keybinds.sprint):
+		if Input.is_key_pressed(game.settings.keybinds.sprint) || (sprinting && get_current_input_direction().length() > 0):
 			# Sprinting
 			speed = SPRINT_SPEED
 			walking = false
@@ -240,13 +240,14 @@ func jump(vector=Vector3.ZERO):
 #this is the loop that detects when a jump is supposed to happen, and runs the jump function
 #the reset on jumps is in the _physics_process function
 func on_jump():
-	if can_wallrun and not is_on_floor():
+	if can_wallrun && !is_on_floor():
 		if in_wallrun:
 			var normal_vector = (wallrun_raycast.object.transform.basis * wallrun_raycast.normal)
 			var loc = (head.global_basis.inverse() * normal_vector).normalized() * JUMP_VELOCITY
 			motion.velocity.local += loc
 			jump()
 		elif not in_wallrun and current_wallrun < max_wallrun:
+			motion.velocity.global.y = 0
 			current_wallrun += 1
 			in_wallrun = true
 	else:
@@ -264,7 +265,6 @@ func usable_raycast(ray:RayCast3D):
 	return false 
 				
 func wall_run():
-	
 	var used = null
 	var left_cast = usable_raycast(wallrun_raycasts.left)
 	var right_cast = usable_raycast(wallrun_raycasts.right)
