@@ -18181,6 +18181,54 @@ skeleton = NodePath("..")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="stage/AnimationLibrary_Godot_Standard" unique_id=1075074676]
 libraries/ = SubResource("AnimationLibrary_82p05")
 
+[node name="CSGBox3D13" type="CSGBox3D" parent="stage" unique_id=669312023]
+transform = Transform3D(5.1, 0, 0, 0, 0.999896, -0.072112426, 0, 0.0144224875, 4.99948, 11.99864, 5.44965, 9.757851)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2.0850587, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="stage" unique_id=1830884517]
+transform = Transform3D(5.1, 0, 0, 0, 0.999896, -0.072112426, 0, 0.0144224875, 4.99948, 6.1402073, 5.44965, 15.010986)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2.0850587, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="stage" unique_id=1079780409]
+transform = Transform3D(5.1, 0, 0, 0, 0.999896, -0.072112426, 0, 0.0144224875, 4.99948, -4.6756344, 9.155457, 15.010986)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2.0850587, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="stage" unique_id=753244414]
+transform = Transform3D(0.019458309, -0.014422389, -4.999444, -6.890675e-10, 0.9998962, -0.072112456, 5.099963, 5.5029086e-05, 0.019075587, -5.008444, 9.155457, 12.400021)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(1.061084, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="stage" unique_id=1423542160]
+transform = Transform3D(5.1, 0, 0, 0, 0.999896, -0.072112426, 0, 0.0144224875, 4.99948, -7.697872, 9.155457, 6.717167)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2.0850587, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="stage" unique_id=792952386]
+transform = Transform3D(5.1, 0, 0, 0, 0.999896, -0.072112426, 0, 0.0144224875, 4.99948, 5.162856, 8.212557, 9.669258)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2.0850587, 5.7182617, 0.047851563)
+material = SubResource("StandardMaterial3D_1bvp3")
+
 [node name="env" type="Node3D" parent="." unique_id=1156764981]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="env" unique_id=425241096]
@@ -18214,10 +18262,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.3000002)
 [node name="RayCastLeft" type="RayCast3D" parent="player/nek/head" unique_id=948122738]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
 target_position = Vector3(-1, 0, 0.5)
+collision_mask = 3
 
 [node name="RayCastRight" type="RayCast3D" parent="player/nek/head" unique_id=1291082527]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0.3000002)
 target_position = Vector3(1, 0, 0.5)
+collision_mask = 3
 
 [node name="eyes" type="Node3D" parent="player/nek/head" unique_id=314834590]
 

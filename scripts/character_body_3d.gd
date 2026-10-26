@@ -102,7 +102,7 @@ var wallrun_raycast = {
 	object = null,
 	normal = Vector3.ZERO
 }
-var wallrun_gravity_multiplier = 0.1
+var wallrun_gravity_multiplier = 0.2
 #held keys for stuff
 var held_keys = {}
 

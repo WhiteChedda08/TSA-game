@@ -6,7 +6,7 @@ var settings = {
 		backward = KEY_S,
 		left = KEY_A,
 		right = KEY_D,
-		crouch = KEY_C,
+		crouch = KEY_CTRL,
 		sprint = KEY_SHIFT,
 		jump = KEY_SPACE
 	}
