@@ -246,6 +246,7 @@ func on_jump():
 			var loc = (head.global_basis.inverse() * normal_vector).normalized() * JUMP_VELOCITY
 			motion.velocity.local += loc
 			jump()
+			currentJumpCount = 0
 		elif not in_wallrun and current_wallrun < max_wallrun:
 			motion.velocity.global.y = 0
 			current_wallrun += 1
