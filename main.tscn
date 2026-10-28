@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bfbx43t08wwes" path="res://godot-prototype-texture/PNG/checker_512x512/checker_orange_512x512.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bvvjn1f8vfaf7" path="res://godot-prototype-texture/PNG/checker_512x512/checker_red_512x512.png" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://cj7slirpwl27c" path="res://scripts/character_body_3d.gd" id="3_lquwl"]
+[ext_resource type="AudioStream" uid="uid://c16n64qnaqh3u" path="res://footsteps-walking-on-wood-sneakers-gfx-sounds-2-2-00-14.mp3" id="6_7mycd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3drfw"]
 albedo_texture = ExtResource("1_h2yge")
@@ -18347,8 +18348,6 @@ material = SubResource("StandardMaterial3D_1bvp3")
 [node name="CSGBox3D28" type="CSGBox3D" parent="stage" unique_id=2096606633]
 transform = Transform3D(-2.2292808e-07, -0.014422488, -4.99948, 0, 0.9998961, -0.07211244, 5.1000004, -1.5616527e-09, -2.1846706e-07, 10.898639, 2.84965, -14.6952505)
 use_collision = true
-collision_layer = 3
-collision_mask = 3
 size = Vector3(1.4, 5.7182617, 0.047851563)
 material = SubResource("StandardMaterial3D_1bvp3")
 
@@ -18415,3 +18414,7 @@ collision_mask = 3
 [node name="eyes" type="Node3D" parent="player/nek/head" unique_id=314834590]
 
 [node name="camera" type="Camera3D" parent="player/nek/head/eyes" unique_id=101131142]
+
+[node name="Jump_sfx" type="AudioStreamPlayer3D" parent="player" unique_id=2014691551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3000002)
+stream = ExtResource("6_7mycd")
