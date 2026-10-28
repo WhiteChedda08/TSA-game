@@ -9,7 +9,7 @@ extends CharacterBody3D
 # Animation Stuff
 
 #Sfx
-@onready var jump_sfx: AudioStreamPlayer3D = $Jump_sfx
+@onready var walk_sfx: AudioStreamPlayer3D = $Walk_sfx
 
 # Crouchng stuff
 @onready var crouching_collision: CollisionShape3D = $Crouching_collision

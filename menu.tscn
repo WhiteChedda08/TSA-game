@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://qpe74gwiwvsi"]
+
+[ext_resource type="Script" uid="uid://dbh3md50tyk8h" path="res://menu.gd" id="1_4hy44"]
+[ext_resource type="Texture2D" uid="uid://lduwudrq3v4w" path="res://ringed_gas_giant_planet.png" id="2_ytr4m"]
+[ext_resource type="AudioStream" uid="uid://xg5rnh8ma8tj" path="res://Loops/deep_space_cold_expanse.ogg" id="3_l48gv"]
+[ext_resource type="AudioStream" uid="uid://dq8r4lumo5und" path="res://Loops/nebula_pad_aurora.ogg" id="4_ecwwl"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_mae5d"]
+panorama = ExtResource("2_ytr4m")
+
+[sub_resource type="Sky" id="Sky_ouk20"]
+sky_material = SubResource("PanoramaSkyMaterial_mae5d")
+
+[sub_resource type="Environment" id="Environment_kk3ma"]
+background_mode = 2
+sky = SubResource("Sky_ouk20")
+glow_enabled = true
+
+[node name="menu" type="Node3D" unique_id=691069430]
+script = ExtResource("1_4hy44")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=494675518]
+environment = SubResource("Environment_kk3ma")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=616541144]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=637972465]
+transform = Transform3D(-0.49318382, -0.023349823, -0.86961186, -0.011327361, 0.9997275, -0.020419436, 0.86985147, -0.00022012761, -0.49331376, 20.977411, 1.244088, 10.955108)
+fov = 43.9
+near = 0.001
+far = 4003.8
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1664972051]
+stream = ExtResource("3_l48gv")
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="." unique_id=272893479]
+stream = ExtResource("4_ecwwl")
