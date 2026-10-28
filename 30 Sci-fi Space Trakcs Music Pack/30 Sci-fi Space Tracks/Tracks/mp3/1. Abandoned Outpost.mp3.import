@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbs1at3tw6su2"
+path="res://.godot/imported/1. Abandoned Outpost.mp3-6652639fad459bf35bd7e535ee0dc039.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/1. Abandoned Outpost.mp3"
+dest_files=["res://.godot/imported/1. Abandoned Outpost.mp3-6652639fad459bf35bd7e535ee0dc039.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

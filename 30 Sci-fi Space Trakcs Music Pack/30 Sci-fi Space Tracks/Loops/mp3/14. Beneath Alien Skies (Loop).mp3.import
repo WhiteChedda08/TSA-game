@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cosnv46qlegde"
+path="res://.godot/imported/14. Beneath Alien Skies (Loop).mp3-f1908be9920a954a871189a0e8bc4d2f.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/14. Beneath Alien Skies (Loop).mp3"
+dest_files=["res://.godot/imported/14. Beneath Alien Skies (Loop).mp3-f1908be9920a954a871189a0e8bc4d2f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

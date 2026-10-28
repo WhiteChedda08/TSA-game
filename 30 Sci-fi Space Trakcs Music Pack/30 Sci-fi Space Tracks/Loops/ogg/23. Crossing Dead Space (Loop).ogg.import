@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jyfiv6d16okw"
+path="res://.godot/imported/23. Crossing Dead Space (Loop).ogg-da3188e3ac5701e72745b22e26fba467.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/23. Crossing Dead Space (Loop).ogg"
+dest_files=["res://.godot/imported/23. Crossing Dead Space (Loop).ogg-da3188e3ac5701e72745b22e26fba467.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

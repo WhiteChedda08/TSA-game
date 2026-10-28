@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hirivc8a67p1"
+path="res://.godot/imported/5. Beyond the Star Gate (Loop).wav-29d08c81729104009cdd9de6187b1b27.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/wav/5. Beyond the Star Gate (Loop).wav"
+dest_files=["res://.godot/imported/5. Beyond the Star Gate (Loop).wav-29d08c81729104009cdd9de6187b1b27.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

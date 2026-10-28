@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ca1ugfga5836f"
+path="res://.godot/imported/6. Signal from Beyond.wav-598d41d7f3aaa0458e8c52a8cf95ed60.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/wav/6. Signal from Beyond.wav"
+dest_files=["res://.godot/imported/6. Signal from Beyond.wav-598d41d7f3aaa0458e8c52a8cf95ed60.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

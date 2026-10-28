@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wg5m7ib1t4wf"
+path="res://.godot/imported/4. Lost Signal (Loop).wav-145c446c8c28b5a38ef5e3be56b34a39.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/wav/4. Lost Signal (Loop).wav"
+dest_files=["res://.godot/imported/4. Lost Signal (Loop).wav-145c446c8c28b5a38ef5e3be56b34a39.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

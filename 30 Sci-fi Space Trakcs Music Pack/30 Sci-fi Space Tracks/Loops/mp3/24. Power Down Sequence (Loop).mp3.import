@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0158kt701tur"
+path="res://.godot/imported/24. Power Down Sequence (Loop).mp3-90507e3b174e401a6c09713db90df074.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/24. Power Down Sequence (Loop).mp3"
+dest_files=["res://.godot/imported/24. Power Down Sequence (Loop).mp3-90507e3b174e401a6c09713db90df074.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

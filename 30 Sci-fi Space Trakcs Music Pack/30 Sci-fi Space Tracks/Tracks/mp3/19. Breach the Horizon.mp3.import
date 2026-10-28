@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxninim44kqal"
+path="res://.godot/imported/19. Breach the Horizon.mp3-6a8fe8a208931080d3949fae2fe60736.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/19. Breach the Horizon.mp3"
+dest_files=["res://.godot/imported/19. Breach the Horizon.mp3-6a8fe8a208931080d3949fae2fe60736.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

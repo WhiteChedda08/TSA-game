@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k3to881cud0p"
+path="res://.godot/imported/30. Stellar Rift (Loop).ogg-ef9d6ff1f3e9af6d8a67a0c99de5b284.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/30. Stellar Rift (Loop).ogg"
+dest_files=["res://.godot/imported/30. Stellar Rift (Loop).ogg-ef9d6ff1f3e9af6d8a67a0c99de5b284.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

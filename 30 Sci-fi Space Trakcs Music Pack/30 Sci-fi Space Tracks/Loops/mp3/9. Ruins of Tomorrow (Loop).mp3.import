@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c57tai1tya0gb"
+path="res://.godot/imported/9. Ruins of Tomorrow (Loop).mp3-039d84288d1d2bb541abe1d6f7df6c51.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/9. Ruins of Tomorrow (Loop).mp3"
+dest_files=["res://.godot/imported/9. Ruins of Tomorrow (Loop).mp3-039d84288d1d2bb541abe1d6f7df6c51.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

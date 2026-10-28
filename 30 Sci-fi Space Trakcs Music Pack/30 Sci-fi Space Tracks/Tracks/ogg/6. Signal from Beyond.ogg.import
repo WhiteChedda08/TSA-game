@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyes3sr8xnmpi"
+path="res://.godot/imported/6. Signal from Beyond.ogg-52db4984b792b59c59d11d6749a1757d.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/ogg/6. Signal from Beyond.ogg"
+dest_files=["res://.godot/imported/6. Signal from Beyond.ogg-52db4984b792b59c59d11d6749a1757d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

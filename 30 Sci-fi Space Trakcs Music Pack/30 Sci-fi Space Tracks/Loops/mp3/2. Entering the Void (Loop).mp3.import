@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bglx0r7x2cjsg"
+path="res://.godot/imported/2. Entering the Void (Loop).mp3-addf48b284d594f256a880ac54da8c6e.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/2. Entering the Void (Loop).mp3"
+dest_files=["res://.godot/imported/2. Entering the Void (Loop).mp3-addf48b284d594f256a880ac54da8c6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

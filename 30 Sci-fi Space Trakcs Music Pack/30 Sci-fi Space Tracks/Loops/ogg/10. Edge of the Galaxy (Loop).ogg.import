@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3t3oeg4lxd5g"
+path="res://.godot/imported/10. Edge of the Galaxy (Loop).ogg-d7746d9fcf17323213a02335f69c8d39.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/10. Edge of the Galaxy (Loop).ogg"
+dest_files=["res://.godot/imported/10. Edge of the Galaxy (Loop).ogg-d7746d9fcf17323213a02335f69c8d39.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

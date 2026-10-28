@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnxyt6s0416xf"
+path="res://.godot/imported/2. Entering the Void.wav-15ff4b5b70e3604f5e1355f9629a310f.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/wav/2. Entering the Void.wav"
+dest_files=["res://.godot/imported/2. Entering the Void.wav-15ff4b5b70e3604f5e1355f9629a310f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

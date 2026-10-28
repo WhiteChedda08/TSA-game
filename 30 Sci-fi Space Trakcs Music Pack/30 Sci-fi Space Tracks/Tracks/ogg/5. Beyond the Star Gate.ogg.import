@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxldps73o5tv1"
+path="res://.godot/imported/5. Beyond the Star Gate.ogg-0c1639df0aceef5c06392ea7e2362a87.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/ogg/5. Beyond the Star Gate.ogg"
+dest_files=["res://.godot/imported/5. Beyond the Star Gate.ogg-0c1639df0aceef5c06392ea7e2362a87.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

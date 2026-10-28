@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chrlfwjy1ay2o"
+path="res://.godot/imported/10. Edge of the Galaxy (Loop).mp3-e7f36d67d201d86c0cb9053ec613cde8.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/10. Edge of the Galaxy (Loop).mp3"
+dest_files=["res://.godot/imported/10. Edge of the Galaxy (Loop).mp3-e7f36d67d201d86c0cb9053ec613cde8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

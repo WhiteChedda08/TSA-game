@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c2yosss3hojuq"
+path="res://.godot/imported/Spacestation_Propulsion_Thruster_Triple_Small_Housing_Mid.obj-23dfbbdac2b48a846180b1f6dd07cbe3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Spacestation_Propulsion_Thruster_Triple_Small_Housing_Mid.obj-23dfbbdac2b48a846180b1f6dd07cbe3.mesh"]
+
+source_file="res://spaceship_blocks_collection/Spacestation_Propulsion_Thruster_Triple_Small_Housing_Mid.obj"
+dest_files=["res://.godot/imported/Spacestation_Propulsion_Thruster_Triple_Small_Housing_Mid.obj-23dfbbdac2b48a846180b1f6dd07cbe3.mesh", "res://.godot/imported/Spacestation_Propulsion_Thruster_Triple_Small_Housing_Mid.obj-23dfbbdac2b48a846180b1f6dd07cbe3.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

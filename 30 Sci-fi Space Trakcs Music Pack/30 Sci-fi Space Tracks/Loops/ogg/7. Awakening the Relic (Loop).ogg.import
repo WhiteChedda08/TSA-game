@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://x2gxdrr8fmmw"
+path="res://.godot/imported/7. Awakening the Relic (Loop).ogg-414ded616dfbd4548c654d4521dd1f58.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/7. Awakening the Relic (Loop).ogg"
+dest_files=["res://.godot/imported/7. Awakening the Relic (Loop).ogg-414ded616dfbd4548c654d4521dd1f58.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

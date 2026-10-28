@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byimmh3hq1sta"
+path="res://.godot/imported/21. Breach of the Voidline (Loop).mp3-b5b87bde85f4a3b680e8318bfcd7a2be.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/21. Breach of the Voidline (Loop).mp3"
+dest_files=["res://.godot/imported/21. Breach of the Voidline (Loop).mp3-b5b87bde85f4a3b680e8318bfcd7a2be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

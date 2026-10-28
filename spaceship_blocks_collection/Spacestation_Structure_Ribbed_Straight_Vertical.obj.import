@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://duwello8q5gpi"
+path="res://.godot/imported/Spacestation_Structure_Ribbed_Straight_Vertical.obj-69bdfdba101963c4215cbd743852fd66.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Spacestation_Structure_Ribbed_Straight_Vertical.obj-69bdfdba101963c4215cbd743852fd66.mesh"]
+
+source_file="res://spaceship_blocks_collection/Spacestation_Structure_Ribbed_Straight_Vertical.obj"
+dest_files=["res://.godot/imported/Spacestation_Structure_Ribbed_Straight_Vertical.obj-69bdfdba101963c4215cbd743852fd66.mesh", "res://.godot/imported/Spacestation_Structure_Ribbed_Straight_Vertical.obj-69bdfdba101963c4215cbd743852fd66.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d2ayrxpevx3ej"
+path="res://.godot/imported/19. Breach the Horizon.ogg-57ab2dae34f07171ea82036223a3e727.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/ogg/19. Breach the Horizon.ogg"
+dest_files=["res://.godot/imported/19. Breach the Horizon.ogg-57ab2dae34f07171ea82036223a3e727.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

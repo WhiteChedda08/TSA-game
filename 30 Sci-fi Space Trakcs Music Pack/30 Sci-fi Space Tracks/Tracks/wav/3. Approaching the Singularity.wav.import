@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3v6f8y67e5yi"
+path="res://.godot/imported/3. Approaching the Singularity.wav-cc2ef9ce2401c62a73334f0d1e4cf765.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/wav/3. Approaching the Singularity.wav"
+dest_files=["res://.godot/imported/3. Approaching the Singularity.wav-cc2ef9ce2401c62a73334f0d1e4cf765.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

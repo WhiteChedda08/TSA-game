@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hplgehk1mgiy"
+path="res://.godot/imported/18. Through the Wormhole.mp3-f0a3444c50194fd3af72d6c0524c5973.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/18. Through the Wormhole.mp3"
+dest_files=["res://.godot/imported/18. Through the Wormhole.mp3-f0a3444c50194fd3af72d6c0524c5973.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

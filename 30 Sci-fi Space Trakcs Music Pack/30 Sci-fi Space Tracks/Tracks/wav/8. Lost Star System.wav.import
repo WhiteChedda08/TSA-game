@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgd6m467th3ww"
+path="res://.godot/imported/8. Lost Star System.wav-76902ae9bd698d44fd9985ff898f4663.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/wav/8. Lost Star System.wav"
+dest_files=["res://.godot/imported/8. Lost Star System.wav-76902ae9bd698d44fd9985ff898f4663.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

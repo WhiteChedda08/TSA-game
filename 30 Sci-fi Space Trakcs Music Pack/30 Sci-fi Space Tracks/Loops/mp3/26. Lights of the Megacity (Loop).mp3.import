@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3lssrxcfflu2"
+path="res://.godot/imported/26. Lights of the Megacity (Loop).mp3-a2120127abb8ae30e91feea6086276c2.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/26. Lights of the Megacity (Loop).mp3"
+dest_files=["res://.godot/imported/26. Lights of the Megacity (Loop).mp3-a2120127abb8ae30e91feea6086276c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

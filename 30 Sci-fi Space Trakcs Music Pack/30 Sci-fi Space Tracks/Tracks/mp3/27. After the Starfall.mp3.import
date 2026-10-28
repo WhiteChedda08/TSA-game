@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnasflel8ancm"
+path="res://.godot/imported/27. After the Starfall.mp3-b8583cb5585e8f49c02706414a1a10d8.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/27. After the Starfall.mp3"
+dest_files=["res://.godot/imported/27. After the Starfall.mp3-b8583cb5585e8f49c02706414a1a10d8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

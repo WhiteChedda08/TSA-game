@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh572r55mwgfq"
+path="res://.godot/imported/12. Before the Warp (Loop).mp3-3da12ab18517f43a53f0b6d44c49bfa6.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/mp3/12. Before the Warp (Loop).mp3"
+dest_files=["res://.godot/imported/12. Before the Warp (Loop).mp3-3da12ab18517f43a53f0b6d44c49bfa6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

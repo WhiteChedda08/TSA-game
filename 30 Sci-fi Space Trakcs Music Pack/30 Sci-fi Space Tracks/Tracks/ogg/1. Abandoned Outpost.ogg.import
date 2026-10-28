@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bd066lnf1uhih"
+path="res://.godot/imported/1. Abandoned Outpost.ogg-7505a5fb0156d6f0a806f912b846e7f5.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/ogg/1. Abandoned Outpost.ogg"
+dest_files=["res://.godot/imported/1. Abandoned Outpost.ogg-7505a5fb0156d6f0a806f912b846e7f5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

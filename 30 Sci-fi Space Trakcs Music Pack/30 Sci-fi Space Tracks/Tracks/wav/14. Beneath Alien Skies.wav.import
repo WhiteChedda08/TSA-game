@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsjmu0h1pgpa7"
+path="res://.godot/imported/14. Beneath Alien Skies.wav-7a8d46f00a12003e91bcdf32d9d9f6cd.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/wav/14. Beneath Alien Skies.wav"
+dest_files=["res://.godot/imported/14. Beneath Alien Skies.wav-7a8d46f00a12003e91bcdf32d9d9f6cd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

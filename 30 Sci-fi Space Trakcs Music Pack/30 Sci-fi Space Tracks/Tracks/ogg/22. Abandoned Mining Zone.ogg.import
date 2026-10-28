@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fm7xjohkvji3"
+path="res://.godot/imported/22. Abandoned Mining Zone.ogg-8662fd6fc708db0c553410b1c2ff425a.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/ogg/22. Abandoned Mining Zone.ogg"
+dest_files=["res://.godot/imported/22. Abandoned Mining Zone.ogg-8662fd6fc708db0c553410b1c2ff425a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

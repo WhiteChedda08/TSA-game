@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqem0xfcd5a43"
+path="res://.godot/imported/21. Breach of the Voidline (Loop).ogg-527d26c0372539c8494d3ae78e21fb9a.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/21. Breach of the Voidline (Loop).ogg"
+dest_files=["res://.godot/imported/21. Breach of the Voidline (Loop).ogg-527d26c0372539c8494d3ae78e21fb9a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://n0oxo2nm22eb"
+path="res://.godot/imported/29. Cryo Chamber.mp3-595625c18100751cc57dce9df112528f.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/29. Cryo Chamber.mp3"
+dest_files=["res://.godot/imported/29. Cryo Chamber.mp3-595625c18100751cc57dce9df112528f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

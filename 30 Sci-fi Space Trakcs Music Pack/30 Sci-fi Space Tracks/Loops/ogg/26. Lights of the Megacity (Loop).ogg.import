@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://suq54nx4gsjk"
+path="res://.godot/imported/26. Lights of the Megacity (Loop).ogg-f29318e1549a4f5805542c44b7bb9d26.oggvorbisstr"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/ogg/26. Lights of the Megacity (Loop).ogg"
+dest_files=["res://.godot/imported/26. Lights of the Megacity (Loop).ogg-f29318e1549a4f5805542c44b7bb9d26.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

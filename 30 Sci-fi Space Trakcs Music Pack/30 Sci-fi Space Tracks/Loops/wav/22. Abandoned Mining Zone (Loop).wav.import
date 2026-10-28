@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cructtf7pnep6"
+path="res://.godot/imported/22. Abandoned Mining Zone (Loop).wav-a0712ba3c70cfbeb0803831ab1e399c8.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/wav/22. Abandoned Mining Zone (Loop).wav"
+dest_files=["res://.godot/imported/22. Abandoned Mining Zone (Loop).wav-a0712ba3c70cfbeb0803831ab1e399c8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

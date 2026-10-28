@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dvr44jqwdvxs4"
+path="res://.godot/imported/1. Abandoned Outpost (Loop).wav-478b10a9ad43e05694f0cedde094242e.sample"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Loops/wav/1. Abandoned Outpost (Loop).wav"
+dest_files=["res://.godot/imported/1. Abandoned Outpost (Loop).wav-478b10a9ad43e05694f0cedde094242e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

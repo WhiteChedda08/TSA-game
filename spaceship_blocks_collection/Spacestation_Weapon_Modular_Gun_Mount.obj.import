@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://lxlr26614tl8"
+path="res://.godot/imported/Spacestation_Weapon_Modular_Gun_Mount.obj-62d4e474c2b32cdfc919be9659955371.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Spacestation_Weapon_Modular_Gun_Mount.obj-62d4e474c2b32cdfc919be9659955371.mesh"]
+
+source_file="res://spaceship_blocks_collection/Spacestation_Weapon_Modular_Gun_Mount.obj"
+dest_files=["res://.godot/imported/Spacestation_Weapon_Modular_Gun_Mount.obj-62d4e474c2b32cdfc919be9659955371.mesh", "res://.godot/imported/Spacestation_Weapon_Modular_Gun_Mount.obj-62d4e474c2b32cdfc919be9659955371.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

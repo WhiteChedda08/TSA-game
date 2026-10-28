@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmwh05lqrta41"
+path="res://.godot/imported/8. Lost Star System.mp3-c3437801a2ef621819d55136ed667921.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/8. Lost Star System.mp3"
+dest_files=["res://.godot/imported/8. Lost Star System.mp3-c3437801a2ef621819d55136ed667921.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

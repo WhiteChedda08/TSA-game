@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b66q2h3sdr17j"
+path="res://.godot/imported/17. The Long Jump.mp3-c3e93debdbf5e7a41e12f9bbdf45b440.mp3str"
+
+[deps]
+
+source_file="res://30 Sci-fi Space Trakcs Music Pack/30 Sci-fi Space Tracks/Tracks/mp3/17. The Long Jump.mp3"
+dest_files=["res://.godot/imported/17. The Long Jump.mp3-c3e93debdbf5e7a41e12f9bbdf45b440.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
