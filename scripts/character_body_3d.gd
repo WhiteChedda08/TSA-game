@@ -97,7 +97,7 @@ var friction = {
 	air = 8.0, #speed reduction when in the air 
 }
 #wallrunning
-const max_wallrun = 2
+const max_wallrun = 50
 var current_wallrun = 0
 var can_wallrun = false
 var in_wallrun = false
