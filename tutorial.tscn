@@ -139,7 +139,7 @@ size = Vector3(0.087402344, 7.5078735, 41.9)
 material = SubResource("StandardMaterial3D_4stdf")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D3" unique_id=536428970]
-transform = Transform3D(1, 0, 3.7066638e-07, 0, 1, 0, -3.7066638e-07, 0, 1, -0.4025097, 1.0896654, 17.987545)
+transform = Transform3D(1, 0, 3.7066638e-07, 0, 1, 0, -3.7066638e-07, 0, 1, -0.4025097, 1.0896654, 17.787544)
 size = Vector3(1, 1.6511002, 2.0039063)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=2135033718]
@@ -571,14 +571,6 @@ height = 4.2755804
 sides = 27
 material = SubResource("StandardMaterial3D_0cr88")
 
-[node name="CSGCylinder3D20" type="CSGCylinder3D" parent="." unique_id=274160552]
-transform = Transform3D(-7.649492e-08, 0.53999996, 0, -1.75, -2.360415e-08, 0, 0, 0, 1.9109997, 4.5369473, 9.977525, -3.004309)
-use_collision = true
-radius = 0.3
-height = 76.787796
-sides = 27
-material = SubResource("StandardMaterial3D_0cr88")
-
 [node name="Wall(run)2" type="CSGBox3D" parent="." unique_id=1680001114]
 transform = Transform3D(5.1, 0, 0, 0, 1, 0, 0, 0, 5, 10.340207, 3.8496497, -20.289015)
 use_collision = true
@@ -973,7 +965,7 @@ material = SubResource("StandardMaterial3D_4t6hg")
 transform = Transform3D(-5.68248e-07, 0, 13, 0, 13, 0, -13, 0, -5.68248e-07, 5.571025, 3.8150566, 10.000969)
 
 [node name="CSGCylinder3D21" type="CSGCylinder3D" parent="." unique_id=986836755]
-transform = Transform3D(0.28422013, 0, 0, 0, 0.110369995, 0, 0, 0, 0.34397992, 1.4484367, 9.505843, 6.095369)
+transform = Transform3D(0.28422013, 0, 0, 0, 0.110369995, 0, 0, 0, 0.34397992, 1.4484367, 9.505843, 6.595369)
 use_collision = true
 radius = 0.3
 height = 78.28467
@@ -981,7 +973,7 @@ sides = 27
 material = SubResource("StandardMaterial3D_0cr88")
 
 [node name="CSGCylinder3D22" type="CSGCylinder3D" parent="." unique_id=1685399635]
-transform = Transform3D(0.26935893, 0, 0, 0, 0.110369995, 0, 0, 0, 0.26753995, 1.4484367, 9.505843, 13.89537)
+transform = Transform3D(0.26935893, 0, 0, 0, 0.110369995, 0, 0, 0, 0.26753995, 1.4484367, 9.505843, 13.595369)
 use_collision = true
 radius = 0.3
 height = 78.28467
@@ -2166,5 +2158,45 @@ transform = Transform3D(-4.371139e-09, -0.03, 0, 0.1, -1.3113416e-09, 0, 0, 0, 0
 use_collision = true
 radius = 0.3
 height = 80.34433
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D54" type="CSGCylinder3D" parent="." unique_id=1792521575]
+transform = Transform3D(-1.5454308e-08, 0.10889444, 0.3860803, -0.5, -6.731554e-09, 0, 1.5454308e-08, -0.108894445, 0.38608035, 10.713038, 9.977526, 2.8196)
+use_collision = true
+radius = 0.3
+height = 107.67348
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D55" type="CSGCylinder3D" parent="." unique_id=519498502]
+transform = Transform3D(-1.545431e-08, 0.108894445, -0.3860803, -0.5, -6.731554e-09, 0, -1.545431e-08, 0.108894445, 0.3860803, -1.5828377, 9.977526, 2.8759062)
+use_collision = true
+radius = 0.3
+height = 107.998474
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D56" type="CSGCylinder3D" parent="." unique_id=146791388]
+transform = Transform3D(-1.545431e-08, 0.108894445, 0.3860803, -0.5, -6.731554e-09, 0, 1.545431e-08, -0.108894445, 0.3860803, -1.4603314, 9.977525, -9.007031)
+use_collision = true
+radius = 0.3
+height = 107.748474
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D57" type="CSGCylinder3D" parent="." unique_id=1383726651]
+transform = Transform3D(-1.545431e-08, 0.108894445, -0.3860803, -0.5, -6.731554e-09, 0, -1.545431e-08, 0.108894445, 0.3860803, 10.71225, 9.977525, -8.829007)
+use_collision = true
+radius = 0.3
+height = 106.824234
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D58" type="CSGCylinder3D" parent="." unique_id=370976133]
+transform = Transform3D(-7.649491e-08, 0.53999996, 0, -1.7500001, -2.360415e-08, 0, 0, 0, 1.9109997, 4.5369473, 9.977526, -3.0043082)
+use_collision = true
+radius = 0.3
+height = 76.787796
 sides = 27
 material = SubResource("StandardMaterial3D_0cr88")
