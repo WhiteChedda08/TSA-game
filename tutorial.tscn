@@ -51,6 +51,14 @@ albedo_texture = ExtResource("6_hu44a")
 uv1_triplanar = true
 uv1_world_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b8eq6"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("6_hu44a")
+roughness = 0.0
+uv1_triplanar = true
+uv1_world_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3drfw"]
 albedo_texture = ExtResource("8_4t6hg")
 uv1_triplanar = true
@@ -1001,7 +1009,7 @@ material = SubResource("StandardMaterial3D_4t6hg")
 transform = Transform3D(-8.742277e-08, 0, 1.9999999, 0, 2, 0, -1.9999999, 0, -8.742277e-08, 17.199999, 0.67390805, -1.999999)
 use_collision = true
 size = Vector3(1, 0.6, 2.6000001)
-material = SubResource("StandardMaterial3D_4t6hg")
+material = SubResource("StandardMaterial3D_b8eq6")
 
 [node name="Slide" type="CSGBox3D" parent="." unique_id=1845944553]
 transform = Transform3D(5.1, 0, 0, 0, 1, 0, 0, 0, 11.599999, 16.822111, 1.690519, -11.557715)
