@@ -289,7 +289,7 @@ func wall_run():
 		var obj = wallrun_raycast.object
 		var norm = wallrun_raycast.normal
 		if obj:
-			external_motion.wallrun.global = (obj.transform.basis * norm).normalized() * -5 * Vector3(1,0,1)
+			external_motion.wallrun.global = norm * -5 * Vector3(1,0,1)
 	else:
 		external_motion.wallrun.global = Vector3.ZERO
 func _physics_process(delta: float) -> void:
