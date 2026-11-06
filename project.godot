@@ -28,6 +28,10 @@ game="*uid://cuc1fm15p2wg3"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 forward={
