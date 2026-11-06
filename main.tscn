@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cvmfoa5lngnhu"]
+[gd_scene format=4 uid="uid://bsxg8vbm2rc2a"]
 
 [ext_resource type="Texture2D" uid="uid://dy0w5lbkmuylh" path="res://godot-prototype-texture/PNG/checker_512x512/checker_black_512x512.png" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cuc1fm15p2wg3" path="res://game_data.gd" id="1_lquwl"]

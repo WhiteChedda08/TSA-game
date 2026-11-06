@@ -1,0 +1,45 @@
+# Blender MTL File: 'buildingPack.blend'
+# Material Count: 4
+
+newmtl Cardboard
+Ns 35.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.438544 0.221146 0.074865
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl CardboardTape
+Ns 440.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.757725 0.357986
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl codeBArre
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/thefamousrat/Documents/Blender/Projects ideas/Building pack/barcode.png
+map_d /home/thefamousrat/Documents/Blender/Projects ideas/Building pack/barcode.png
+
+newmtl sign2
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/thefamousrat/Documents/Blender/Projects ideas/Building pack/sign2.png
