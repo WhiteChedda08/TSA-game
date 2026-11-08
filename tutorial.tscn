@@ -52,6 +52,12 @@ albedo_texture = ExtResource("5_0cr88")
 uv1_triplanar = true
 uv1_world_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ns12n"]
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = ExtResource("1_ehuit")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4t6hg"]
 albedo_texture = ExtResource("6_hu44a")
 uv1_triplanar = true
@@ -2287,6 +2293,11 @@ emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 3.63
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uufoa"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 4.05
+
 [node name="tutorial" type="Node3D" unique_id=138930281]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=316731058]
@@ -2294,6 +2305,7 @@ environment = SubResource("Environment_rwowx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1124943629]
 transform = Transform3D(-0.6123725, 0.047367025, 0.7891493, 0.61237246, 0.6597398, 0.4355958, -0.5000002, 0.7500002, -0.43301278, 0, 0, 0)
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
 
 [node name="baseplate" type="CSGBox3D" parent="." unique_id=1322271176]
@@ -2592,7 +2604,7 @@ sides = 27
 material = SubResource("StandardMaterial3D_0cr88")
 
 [node name="CSGCylinder3D17" type="CSGCylinder3D" parent="." unique_id=520043610]
-transform = Transform3D(1.75, 0, 0, 0, 0.54, 0, 0, 0, 1.9109997, 17.998478, 2.7926855, 20.005665)
+transform = Transform3D(1.75, 0, 0, 0, 0.54, 0, 0, 0, 1.9109997, 18.998478, 2.7926855, 20.005665)
 use_collision = true
 radius = 0.3
 height = 10.919153
@@ -2736,7 +2748,7 @@ size = Vector3(12, 0.2719785, 3.5)
 material = SubResource("StandardMaterial3D_hu44a")
 
 [node name="CSGCylinder3D18" type="CSGCylinder3D" parent="." unique_id=847775309]
-transform = Transform3D(1.75, 0, 0, 0, 0.54, 0, 0, 0, 1.9109997, 13.098478, 2.7926855, 17.305664)
+transform = Transform3D(1.75, 0, 0, 0, 0.54, 0, 0, 0, 1.9109997, 12.997248, 2.7926855, 16.995071)
 use_collision = true
 radius = 0.3
 height = 10.919153
@@ -3385,10 +3397,10 @@ use_collision = true
 size = Vector3(0.1, 0.1, 3)
 
 [node name="CSGBox3D31" type="CSGBox3D" parent="." unique_id=1275000088]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5142193, 0, -1, 0, -4.371139e-08, -2.468122, 8.722311, 20.493652)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5142193, 0, -1, 0, -4.371139e-08, -2.468122, 8.722311, 19.20186)
 use_collision = true
 size = Vector3(0.087402344, 3.6000001, 29.5)
-material = SubResource("StandardMaterial3D_4stdf")
+material = SubResource("StandardMaterial3D_ns12n")
 
 [node name="Wall(run)4" type="CSGBox3D" parent="." unique_id=1520681865]
 transform = Transform3D(-2.2292808e-07, 0, 5, 0, 1, 0, -5.1, 0, -2.1855695e-07, -11.459793, 3.8496497, -13.689014)
@@ -7166,5 +7178,344 @@ transform = Transform3D(-4.2161727e-09, 0, -0.11759998, 0, 0.04245, 0, 0.0964547
 use_collision = true
 radius = 0.3
 height = 35.835583
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="FlatLight" type="CSGCylinder3D" parent="." unique_id=778766908]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 12.997389, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight" unique_id=432735287]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight" unique_id=349246795]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight2" type="CSGCylinder3D" parent="." unique_id=1848122116]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 16.997389, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight2" unique_id=1388060784]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight2" unique_id=1790314730]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight3" type="CSGCylinder3D" parent="." unique_id=2004998390]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 20.997389, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight3" unique_id=12196884]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight3" unique_id=1189195516]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight4" type="CSGCylinder3D" parent="." unique_id=2084206295]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 8.997389, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight4" unique_id=991624829]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight4" unique_id=1376268226]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight5" type="CSGCylinder3D" parent="." unique_id=1066230810]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, -3.0026112, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight5" unique_id=2120154730]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight5" unique_id=823525130]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight6" type="CSGCylinder3D" parent="." unique_id=2052113831]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 0.99738884, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight6" unique_id=1330509761]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight6" unique_id=718712750]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight7" type="CSGCylinder3D" parent="." unique_id=1925036790]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 4.997389, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight7" unique_id=1432134785]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight7" unique_id=1628142441]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight8" type="CSGCylinder3D" parent="." unique_id=1188214457]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, -7.002611, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight8" unique_id=1806978490]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight8" unique_id=1114117713]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight9" type="CSGCylinder3D" parent="." unique_id=1070570588]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, -11.002611, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight9" unique_id=737646603]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight9" unique_id=946480073]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight10" type="CSGCylinder3D" parent="." unique_id=1233410564]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, -15.002611, 5.6191864, 22)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight10" unique_id=1806576548]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight10" unique_id=763158385]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="CSGCylinder3D36" type="CSGCylinder3D" parent="." unique_id=712777126]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, -3.0044053, 0.001991272, 19.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D37" type="CSGCylinder3D" parent="." unique_id=2133790682]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, -10.004405, 0.001991272, 19.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D38" type="CSGCylinder3D" parent="." unique_id=905097959]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, 3.9955947, 0.001991272, 19.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D39" type="CSGCylinder3D" parent="." unique_id=969672773]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, 10.995595, 0.001991272, 19.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D40" type="CSGCylinder3D" parent="." unique_id=44740243]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, 18.995594, 0.001991272, 19.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D41" type="CSGCylinder3D" parent="." unique_id=707747905]
+transform = Transform3D(3, 0, 0, 0, 0.9259999, 0, 0, 0, 3.276, 12.995595, 0.001991272, 16.999508)
+use_collision = true
+radius = 0.3
+height = 4.2755804
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="FlatLight11" type="CSGCylinder3D" parent="." unique_id=252026024]
+transform = Transform3D(0.7, 0, 0, 0, -6.119594e-09, -0.7, 0, 0.14, -3.059797e-08, 21.48648, 9.005253, 24)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight11" unique_id=843923408]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight11" unique_id=1604869967]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight12" type="CSGCylinder3D" parent="." unique_id=1227255204]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 14.997389, 5.6191864, 18)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight12" unique_id=2001987096]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight12" unique_id=1506439871]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="FlatLight13" type="CSGCylinder3D" parent="." unique_id=1052483442]
+transform = Transform3D(0.7, 0, 0, 0, 0.14, 0, 0, 0, 0.7, 18.997389, 5.6191864, 18)
+sides = 27
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="FlatLight13" unique_id=1873474405]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, -0.20340729, 0)
+sides = 27
+material = SubResource("StandardMaterial3D_uufoa")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FlatLight13" unique_id=2018892787]
+transform = Transform3D(1.4285715, 0, 0, 0, 7.142857, 0, 0, 0, 1.4285715, 0, -1.8282318, 0)
+light_energy = 0.279
+light_indirect_energy = 2.743
+light_specular = 4.223
+
+[node name="Railing6" type="CSGCylinder3D" parent="." unique_id=1117906598]
+transform = Transform3D(-0.050000004, -0.025980761, 0, 0.08660255, -0.015000002, 0, 0, 0, 0.110000014, 9.187173, 4.7678447, 18.92042)
+use_collision = true
+radius = 0.3
+height = 207.74432
+sides = 17
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D36" type="CSGCylinder3D" parent="Railing6" unique_id=1379039860]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 3.8146973e-06, 100.02823, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D37" type="CSGCylinder3D" parent="Railing6" unique_id=1758990225]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 3.8146973e-06, 80.0282, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D38" type="CSGCylinder3D" parent="Railing6" unique_id=1879347180]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, 56.694885, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D39" type="CSGCylinder3D" parent="Railing6" unique_id=233741321]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, 33.36154, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D40" type="CSGCylinder3D" parent="Railing6" unique_id=1275075899]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, 13.361572, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D41" type="CSGCylinder3D" parent="Railing6" unique_id=517698946]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, -6.6384277, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D42" type="CSGCylinder3D" parent="Railing6" unique_id=227185529]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, -29.971802, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D43" type="CSGCylinder3D" parent="Railing6" unique_id=211013578]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, -53.305115, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D44" type="CSGCylinder3D" parent="Railing6" unique_id=1969686264]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, -79.9718, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D45" type="CSGCylinder3D" parent="Railing6" unique_id=990619633]
+transform = Transform3D(-4.3711392e-08, 0.3, 0, -3.3333337, -4.371139e-08, 0, 0, 0, 1.0000001, 0, -99.9718, 0)
+use_collision = true
+radius = 0.3
+height = 34.354637
+sides = 27
+material = SubResource("StandardMaterial3D_0cr88")
+
+[node name="CSGCylinder3D50" type="CSGCylinder3D" parent="Railing6" unique_id=73421050]
+transform = Transform3D(1.0000001, 0, 0, 1.4210855e-14, 1, 0, 0, 0, 1.0000001, 5, 0, 0)
+use_collision = true
+radius = 0.3
+height = 207.74432
 sides = 27
 material = SubResource("StandardMaterial3D_0cr88")
