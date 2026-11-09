@@ -1,16 +1,25 @@
 [gd_scene format=4 uid="uid://dq5yf0gjs43qa"]
 
+[ext_resource type="Texture2D" uid="uid://vdgttke5mnga" path="res://Concrete031_2K-JPG/Concrete031_2K-JPG_Color.jpg" id="1_dudfa"]
 [ext_resource type="Texture2D" uid="uid://dy0w5lbkmuylh" path="res://godot-prototype-texture/PNG/checker_512x512/checker_black_512x512.png" id="1_ehuit"]
+[ext_resource type="Texture2D" uid="uid://df45dlphasmm1" path="res://Concrete031_2K-JPG/Concrete031_2K-JPG_NormalDX.jpg" id="2_5gpbq"]
 [ext_resource type="Script" uid="uid://cj7slirpwl27c" path="res://scripts/character_body_3d.gd" id="2_5mrt3"]
 [ext_resource type="AudioStream" uid="uid://c16n64qnaqh3u" path="res://footsteps-walking-on-wood-sneakers-gfx-sounds-2-2-00-14.mp3" id="3_rwowx"]
+[ext_resource type="Texture2D" uid="uid://bu7jodktpjg8l" path="res://Concrete031_2K-JPG/Concrete031_2K-JPG_Roughness.jpg" id="3_tfgte"]
+[ext_resource type="Texture2D" uid="uid://b45dvynehsr23" path="res://Metal062C_2K-JPG/Metal062C_2K-JPG_Color.jpg" id="4_dyhf1"]
 [ext_resource type="Texture2D" uid="uid://bal003udvxhyq" path="res://godot-prototype-texture/PNG/checker_512x512/checker_blue_512x512.png" id="5_0cr88"]
-[ext_resource type="Texture2D" uid="uid://bvvjn1f8vfaf7" path="res://godot-prototype-texture/PNG/checker_512x512/checker_red_512x512.png" id="5_rwowx"]
+[ext_resource type="Texture2D" uid="uid://mjcs0d61nnut" path="res://Metal062C_2K-JPG/Metal062C_2K-JPG_NormalDX.jpg" id="5_53tq2"]
+[ext_resource type="Texture2D" uid="uid://ts134qlh8vkf" path="res://Metal062C_2K-JPG/Metal062C_2K-JPG_Roughness.jpg" id="6_4ods2"]
 [ext_resource type="Texture2D" uid="uid://c0wlg7sg5miye" path="res://godot-prototype-texture/PNG/checker_512x512/checker_cyan_512x512.png" id="6_hu44a"]
 [ext_resource type="PackedScene" uid="uid://5wrk6ieo86h" path="res://3D_spaceships_pack/2.glb" id="7_tvjhf"]
 [ext_resource type="Texture2D" uid="uid://bfbx43t08wwes" path="res://godot-prototype-texture/PNG/checker_512x512/checker_orange_512x512.png" id="8_4t6hg"]
+[ext_resource type="Texture2D" uid="uid://f8f8gcp07fo5" path="res://Metal063_2K-JPG/Metal063_2K-JPG_Color.jpg" id="9_dyhf1"]
+[ext_resource type="Texture2D" uid="uid://bsoxgi4648m00" path="res://Metal063_2K-JPG/Metal063_2K-JPG_Metalness.jpg" id="10_53tq2"]
 [ext_resource type="Texture2D" uid="uid://d0y5r0ac6ongj" path="res://cardboardBoxesPack/gltf/Cardboard_BlueStickerDiffuse.png" id="10_tvjhf"]
 [ext_resource type="Texture2D" uid="uid://blh4wbqw7om5t" path="res://cardboardBoxesPack/gltf/Cardboard_barcode.png" id="11_4hjyh"]
+[ext_resource type="Texture2D" uid="uid://c0p0raf7bnwhm" path="res://Metal063_2K-JPG/Metal063_2K-JPG_NormalDX.jpg" id="11_4ods2"]
 [ext_resource type="Texture2D" uid="uid://2fmf74l7ayvm" path="res://cardboardBoxesPack/gltf/Cardboard_sign4.png" id="11_vmw6g"]
+[ext_resource type="Texture2D" uid="uid://e71jaw0qn6nh" path="res://Metal063_2K-JPG/Metal063_2K-JPG_Roughness.jpg" id="12_0gmok"]
 [ext_resource type="Texture2D" uid="uid://dprgfctwj6wfc" path="res://cardboardBoxesPack/gltf/Cardboard_sign2.png" id="12_bsk3x"]
 [ext_resource type="Texture2D" uid="uid://dif0xm0725sdl" path="res://cardboardBoxesPack/gltf/Cardboard_RedStickerDiffuse.png" id="13_dl7dh"]
 [ext_resource type="Texture2D" uid="uid://8lkv5qwcj0xl" path="res://cardboardBoxesPack/gltf/Cardboard_sign3.png" id="14_bsk3x"]
@@ -28,14 +37,21 @@ sky = SubResource("Sky_5mrt3")
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hu44a"]
-albedo_texture = ExtResource("1_ehuit")
+albedo_texture = ExtResource("1_dudfa")
+roughness_texture = ExtResource("3_tfgte")
+normal_enabled = true
+normal_texture = ExtResource("2_5gpbq")
+uv1_scale = Vector3(0.08, 0.08, 0.08)
 uv1_triplanar = true
-uv1_world_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4stdf"]
-albedo_texture = ExtResource("1_ehuit")
+albedo_color = Color(0.32544112, 0.32544085, 0.32544088, 1)
+albedo_texture = ExtResource("4_dyhf1")
+roughness_texture = ExtResource("6_4ods2")
+normal_enabled = true
+normal_texture = ExtResource("5_53tq2")
+uv1_scale = Vector3(0.09, 0.09, 0.09)
 uv1_triplanar = true
-uv1_world_triplanar = true
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ehuit"]
 
@@ -43,7 +59,12 @@ uv1_world_triplanar = true
 height = 1.2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cr88"]
-albedo_texture = ExtResource("5_rwowx")
+albedo_texture = ExtResource("9_dyhf1")
+metallic = 1.0
+metallic_texture = ExtResource("10_53tq2")
+roughness_texture = ExtResource("12_0gmok")
+normal_enabled = true
+normal_texture = ExtResource("11_4ods2")
 uv1_triplanar = true
 uv1_world_triplanar = true
 
@@ -2305,6 +2326,7 @@ environment = SubResource("Environment_rwowx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1124943629]
 transform = Transform3D(-0.6123725, 0.047367025, 0.7891493, 0.61237246, 0.6597398, 0.4355958, -0.5000002, 0.7500002, -0.43301278, 0, 0, 0)
+light_energy = 4.452
 light_volumetric_fog_energy = 0.0
 shadow_enabled = true
 
@@ -5094,7 +5116,7 @@ mesh = SubResource("ArrayMesh_qqgrn")
 shape = SubResource("ConcavePolygonShape3D_usrqm")
 
 [node name="shelf9" type="CSGBox3D" parent="." unique_id=108628239]
-transform = Transform3D(-1.7320509, 0, 1.4284997, 0, 2.8569999, 0, -0.9999997, 0, -2.4742346, 20.499998, 5.073908, 12.800001)
+transform = Transform3D(-0.5176382, 0, 2.7596498, 0, 2.8569994, 0, -1.9318514, 0, -0.7394464, 19.364386, 5.073908, 17.298615)
 use_collision = true
 size = Vector3(1.5, 0.1, 2.0039063)
 material = SubResource("StandardMaterial3D_4t6hg")
@@ -5679,7 +5701,7 @@ shape = SubResource("ConcavePolygonShape3D_isfuy")
 transform = Transform3D(2.8977776, 0, 0.77645695, 0, 3, 0, -0.77645695, 0, 2.8977776, 20.800001, 1.6, 11.6)
 
 [node name="Cardboard_020" type="MeshInstance3D" parent="Cardboard_0206" unique_id=765388540]
-transform = Transform3D(4.5364686e-08, 0, -0.76109314, 0, 0.76109314, 0, 0.76109314, 0, 4.5364686e-08, 0, 0, 0)
+transform = Transform3D(-0.53817403, 0, -0.53817403, 0, 0.76109296, 0, 0.53817403, 0, -0.53817403, -0.55745983, 0, 1.5975623)
 mesh = SubResource("ArrayMesh_8ulgr")
 
 [node name="RedSticker_011" type="MeshInstance3D" parent="Cardboard_0206/Cardboard_020" unique_id=1536138581]
@@ -5699,7 +5721,7 @@ shape = SubResource("ConcavePolygonShape3D_isfuy")
 transform = Transform3D(1.2217492, 0, -0.5305523, 0, 1, 0, 0.32736674, 0, 1.9800483, 19.300001, 3.8000002, 13.6)
 
 [node name="Cardboard_013" type="MeshInstance3D" parent="Cardboard_0134" unique_id=682523100]
-transform = Transform3D(5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, 5.9604645e-08, 0, 0, 0)
+transform = Transform3D(0.7071065, 0, 0.7071066, 0, 1, 0, -0.70710665, 0, 0.7071067, -0.33184814, 0, 1.7799654)
 mesh = SubResource("ArrayMesh_nknhv")
 
 [node name="RedSticker_001" type="MeshInstance3D" parent="Cardboard_0134/Cardboard_013" unique_id=468544263]
@@ -5723,7 +5745,7 @@ shape = SubResource("ConcavePolygonShape3D_ntoye")
 transform = Transform3D(-0.7071066, 6.4013737e-09, 0.70710695, 9.052913e-09, 1, 0, -0.70710695, 6.4013777e-09, -0.7071066, 21.1, 4.1000004, 11.200001)
 
 [node name="Cardboard_019" type="MeshInstance3D" parent="Cardboard_0207" unique_id=1398379029]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4000001, 0)
+transform = Transform3D(0.7071066, 2.6515363e-09, -0.7071065, 2.6515385e-09, 1, 6.401376e-09, 0.7071065, -6.401368e-09, 0.7071066, -3.6851063, -0.39999723, -3.9396348)
 mesh = SubResource("ArrayMesh_f4s5o")
 
 [node name="BlueSticker_010" type="MeshInstance3D" parent="Cardboard_0207/Cardboard_019" unique_id=2067265267]
@@ -5906,7 +5928,7 @@ shape = SubResource("ConcavePolygonShape3D_bsapx")
 transform = Transform3D(-4.2221956e-07, -3.5053444, -0.9092312, 9.999999, -1.5862861e-07, 0, -1.1313339e-07, -0.93925416, 3.3932972, 16.1, 2.1, 15)
 
 [node name="Cardboard_029" type="MeshInstance3D" parent="Cardboard_0301" unique_id=661922937]
-transform = Transform3D(0.8, -8.881784e-16, 6.2651615e-08, -3.5527137e-15, 0.79999983, 4.4703484e-08, -6.2651615e-08, 0, 0.8, 0, -0.27149034, 0.045975447)
+transform = Transform3D(0.79999995, -3.7168972e-09, 7.162502e-08, -4.8018258e-08, 0.56568515, 0.5656854, -5.327475e-08, -0.56568533, 0.5656855, 1.0430813e-07, 0.15981817, 0.5384407)
 mesh = SubResource("ArrayMesh_k62om")
 
 [node name="BlueSticker_013" type="MeshInstance3D" parent="Cardboard_0301/Cardboard_029" unique_id=1675791095]
